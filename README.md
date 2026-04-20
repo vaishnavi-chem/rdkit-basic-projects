@@ -1,23 +1,21 @@
 # RDKit Basic Project
 ## 📌 Description
-This project uses RDKit to perform basic cheminformatics analysis on molecules.
+This repository contains beginner-level cheminformatics projects using RDKit.
 
-## 🔬 Features
-- Convert SMILES to molecule
-- Add hydrogens
-- Calculate molecular weight
-- Display molecular formula
+## ⚙️ Features
+- Atom counting (C, H, O)
+- Molecular weight calculation
+- Functional group detection (OH group)
 
-## 🧪 Example
-Input:
-SMILES=CCO
+## 🧬 Example
+SMILES: CCO (Ethanol)
 
 Output:
-- Molecular Formula: {'C': 2, 'O': 1, 'H': 6}
-- Total Atoms: 9
+- Molecular Formula: C2H6O
 - Molecular Weight: 46.069
+- Hydrogen Atoms: 6
 
-## 🛠️ Tools Used
+## 🛠️ Technologies Used
 - Python
 - RDKit
 
@@ -26,3 +24,7 @@ Output:
 
 ## 👩‍🔬 Author
 Vaishnavi Thakare
+
+## 🚀 Future Work
+- Dectect more functional groups (COOH, NH2)
+- Visualize molecules
