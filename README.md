@@ -1,21 +1,20 @@
-# RDKit Basic Project
-## 📌 Description
-This repository contains beginner-level cheminformatics projects using RDKit.
+# RDKit Functional Group Analyzer
+This project uses RDKit to detect and count functional groups in molecules using SMARTS patterns.
 
-## ⚙️ Features
-- Atom counting (C, H, O)
-- Molecular weight calculation
-- Functional group detection (OH group)
+## Features
+- Detects alcohol (OH), carboxyllic acid (COOH), and carbonyl (C=O)
+- Counts number of functional groups in each molecule
+- Uses SMILES input
 
 ## 🧬 Example
-SMILES: CCO (Ethanol)
+SMILES: CC(=O)O
 
 Output:
-- Molecular Formula: C2H6O
-- Molecular Weight: 46.069
-- Hydrogen Atoms: 6
+- OH (alcohol)    : 0    
+- COOH (acid)     : 1 
+- C=O (carbonyl)  : 1      
 
-## 🛠️ Technologies Used
+## Technologies Used
 - Python
 - RDKit
 
@@ -25,6 +24,4 @@ Output:
 ## 👩‍🔬 Author
 Vaishnavi Thakare
 
-## 🚀 Future Work
-- Dectect more functional groups (COOH, NH2)
-- Visualize molecules
+
