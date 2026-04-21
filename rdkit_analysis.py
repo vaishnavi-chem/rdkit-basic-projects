@@ -10,8 +10,10 @@ Chem.MolFromSmarts("C(=O)")
 }
 for smi in smiles_list:
     mol=Chem.MolFromSmiles(smi)
-    print("\nSMILES:", smi)
+    print("\n==============================")
+    print(f"Analyzing Molecule: {smi}")
+    print("==============================")
     for name, pattern in patterns.items():
         matches=mol.GetSubstructMatches(pattern)
         count=len(matches)
-        print(f"{name}:",count)
+        print(f"{name:<20}: {count}")
