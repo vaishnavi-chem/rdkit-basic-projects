@@ -12,5 +12,6 @@ for smi in smiles_list:
     mol=Chem.MolFromSmiles(smi)
     print("\nSMILES:", smi)
     for name, pattern in patterns.items():
-        result=mol.HasSubstructMatch(pattern)
-        print(f"{name}:",result)
+        matches=mol.GetSubstructMatches(pattern)
+        count=len(matches)
+        print(f"{name}:",count)
